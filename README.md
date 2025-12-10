@@ -95,11 +95,13 @@ stroke-prediction-ml-project/
 ```
 🚀 How to Run
 Install dependencies
+```
 pip install numpy pandas scikit-learn xgboost matplotlib seaborn
-
+```
 Open the notebook
+```
 jupyter notebook notebooks/stroke_analysis.ipynb
-
+```
 📌 Key Skills Demonstrated
 
 Exploratory Data Analysis (EDA)
