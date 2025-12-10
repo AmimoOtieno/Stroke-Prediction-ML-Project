@@ -70,7 +70,7 @@ Two clusters emerged:
 
 Cluster 1: Older, high-risk (hypertension, heart disease, stroke)
 
-📁 Repository Structure
+## 📁 Repository Structure
 stroke-prediction-ml-project/
 │
 ├── notebooks/
@@ -81,37 +81,29 @@ stroke-prediction-ml-project/
 │
 ├── src/
 │   ├── classification.py
-│   ├── regression.py
+├── regression.py
 │   ├── clustering.py
 │   └── data_preprocessing.py
 │
 └── README.md
 
-🚀 How to Run
+## 🚀 How to Run
 
-Install dependencies:
-
+### Install dependencies:
 pip install numpy pandas scikit-learn xgboost matplotlib seaborn
 
-
-Open the notebook:
-
+### Open the notebook:
 jupyter notebook notebooks/stroke_analysis.ipynb
 
-📌 Key Skills Demonstrated
+## 📌 Key Skills Demonstrated
+- Exploratory Data Analysis (EDA)
+- Data cleaning & preprocessing
+- Classification, regression & clustering models
+- Feature engineering
+- SMOTE balancing technique
+- Evaluation metrics (Accuracy, AUC, RMSE, R², Silhouette score)
+- Visualisation using Matplotlib & Seaborn
 
-Exploratory Data Analysis (EDA)
 
-Data cleaning & preprocessing
-
-Classification, regression & clustering models
-
-Feature engineering
-
-SMOTE balancing technique
-
-Evaluation metrics (Accuracy, AUC, RMSE, R², Silhouette score)
-
-Visualisation using Matplotlib & Seaborn
 
 Cluster 2: Younger, healthier
