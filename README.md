@@ -76,6 +76,7 @@ Cluster 1: Older, higher risk (hypertension, heart disease, stroke)
 Cluster 2: Younger, healthier population
 
 📁 Repository Structure
+```
 stroke-prediction-ml-project/
 │
 ├── notebooks/
@@ -91,7 +92,7 @@ stroke-prediction-ml-project/
 │   └── data_preprocessing.py
 │
 └── README.md
-
+```
 🚀 How to Run
 Install dependencies
 pip install numpy pandas scikit-learn xgboost matplotlib seaborn
