@@ -1,77 +1,81 @@
-# Stroke-Prediction-ML-Project
-Machine learning classification, regression, and clustering analysis on a stroke prediction dataset.
+Stroke Prediction Machine Learning Project
 
-This project applies end-to-end data analysis and machine learning techniques on the Stroke Prediction Dataset, including descriptive analysis, data preprocessing, classification, regression, and clustering.
-
-It was completed as part of the Programming for Data Analysis & AI coursework.
+This project applies end-to-end data analysis and machine learning techniques to the Stroke Prediction Dataset.
+It includes exploratory analysis, data preprocessing, classification, regression, and clustering to extract insights and develop predictive models.
 
 🔍 Project Overview
 
-The project includes:
+The project covers the full data science workflow:
 
 1️⃣ Descriptive Analysis
 
 Summary statistics
 
-Histograms, boxplots, correlation matrix
+Distribution plots (histograms, boxplots, pie charts)
 
-Categorical distribution visualisations
+Correlation matrix
+
+Insights on demographic & clinical variables
 
 2️⃣ Data Preparation
 
-Dropping noisy attributes
+Dropping noisy / irrelevant attributes
 
 Outlier detection using IQR
 
-Handling missing values
+Handling missing values (incl. BMI prediction using Decision Tree Regressor)
 
 Label Encoding
 
-SMOTE Oversampling
+Class balancing using SMOTE
 
 Train–test split
 
 Standardization
 
 3️⃣ Classification Models
+
+The following machine learning algorithms were used to classify whether a patient is likely to have a stroke:
+
 Model	Best Accuracy	AUC
 k-Nearest Neighbour	0.98	0.977
 Naïve Bayes	0.79	0.787
 Decision Tree	0.96	0.955
 XGBoost	0.97	0.991
 
-Best Model: XGBoost (highest AUC and balanced performance)
+Best Model:
+✔️ XGBoost — highest AUC and most robust clinical performance
+Alternative:
+✔️ kNN — performs strongly with simple interpretability
 
 4️⃣ Regression (Predicting BMI)
 
 Models used:
 
-OLS Linear Regression
+Ordinary Least Squares (OLS)
 
 Decision Tree Regressor
 
-Best Model: Decision Tree Regressor (Higher R², lower RMSE & MAE)
+Best Model:
+✔️ Decision Tree Regressor — higher R², lower RMSE & MAE
+
+Also used to predict missing BMI values.
 
 5️⃣ Clustering
 
-Algorithms used:
+Implemented two clustering approaches:
 
-K-Means (k=2 using Calinski-Harabasz)
+Method	Silhouette Score	Optimal Clusters
+K-Means	0.18	2
+Hierarchical Clustering	0.17	2
 
-Hierarchical Clustering
+Cluster insights:
 
-Silhouette scores:
+Cluster 1: Older, higher risk (hypertension, heart disease, stroke)
 
-K-Means: 0.18
+Cluster 2: Younger, healthier population
 
-Hierarchical: 0.17
-
-Two clusters emerged:
-
-Cluster 1: Older, high-risk (hypertension, heart disease, stroke)
-
-## 📁 Repository Structure
-
+📁 Repository Structure
 stroke-prediction-ml-project/
 │
 ├── notebooks/
@@ -88,24 +92,57 @@ stroke-prediction-ml-project/
 │
 └── README.md
 
-
-## 🚀 How to Run
-
-### Install dependencies:
+🚀 How to Run
+Install dependencies
 pip install numpy pandas scikit-learn xgboost matplotlib seaborn
 
-### Open the notebook:
+Open the notebook
 jupyter notebook notebooks/stroke_analysis.ipynb
 
-## 📌 Key Skills Demonstrated
-- Exploratory Data Analysis (EDA)
-- Data cleaning & preprocessing
-- Classification, regression & clustering models
-- Feature engineering
-- SMOTE balancing technique
-- Evaluation metrics (Accuracy, AUC, RMSE, R², Silhouette score)
-- Visualisation using Matplotlib & Seaborn
+📌 Key Skills Demonstrated
 
+Exploratory Data Analysis (EDA)
 
+Data cleaning & preprocessing
 
-Cluster 2: Younger, healthier
+Feature engineering
+
+Class balancing using SMOTE
+
+Classification, regression & clustering
+
+Train/test pipeline development
+
+Model evaluation (Accuracy, AUC, RMSE, MAE, R², Silhouette score)
+
+Visualisation using Matplotlib & Seaborn
+
+Interpretation of ML outputs in a real-world health context
+
+📈 Results Summary
+
+XGBoost provided the best overall classification performance
+
+Decision Tree Regressor outperformed linear regression for BMI prediction
+
+Clustering revealed two distinct risk groups in the population
+
+The dataset shows non-linear patterns, favouring tree-based models
+
+🛠️ Technologies Used
+
+Python
+
+NumPy
+
+Pandas
+
+Scikit-learn
+
+XGBoost
+
+Matplotlib
+
+Seaborn
+
+Jupyter Notebook
