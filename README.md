@@ -83,7 +83,7 @@ stroke-prediction-ml-project/
 │   └── stroke_analysis.ipynb
 │
 ├── report/
-│   └── Stroke Analysis Report.docx
+│   └── Stroke Prediction Machine Learning Project.pdf
 │
 ├── src/
 │   ├── classification.py
