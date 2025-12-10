@@ -1,6 +1,5 @@
 # Stroke-Prediction-ML-Project
 Machine learning classification, regression, and clustering analysis on a stroke prediction dataset.
-📘 Stroke Prediction Machine Learning Project
 
 This project applies end-to-end data analysis and machine learning techniques on the Stroke Prediction Dataset, including descriptive analysis, data preprocessing, classification, regression, and clustering.
 
