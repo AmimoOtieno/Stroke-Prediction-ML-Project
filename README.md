@@ -71,6 +71,7 @@ Two clusters emerged:
 Cluster 1: Older, high-risk (hypertension, heart disease, stroke)
 
 ## 📁 Repository Structure
+
 stroke-prediction-ml-project/
 │
 ├── notebooks/
@@ -81,11 +82,12 @@ stroke-prediction-ml-project/
 │
 ├── src/
 │   ├── classification.py
-├── regression.py
+│   ├── regression.py
 │   ├── clustering.py
 │   └── data_preprocessing.py
 │
 └── README.md
+
 
 ## 🚀 How to Run
 
